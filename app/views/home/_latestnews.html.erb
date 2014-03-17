@@ -1,0 +1,7 @@
+<div>
+  <% @hpLatestNews.each do |hpLatestNews| %>
+      <h3>Title: <%= hpLatestNews.title %></h3>
+      <h3>Date: <%= hpLatestNews.date.strftime('%D') %></h3>
+      <p><%= hpLatestNews.content %></p>
+  <% end %>
+</div>

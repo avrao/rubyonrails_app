@@ -1,0 +1,34 @@
+<h1>TEST</h1>
+
+<p>
+
+<% if Date.today == first_day(year,month) && Date.today.strftime("%A") == 'Saturday' || Date.today.strftime("%A") == 'Sunday'%>
+    <% if Date.today == first_day(year,month) || Date.today == first_day(year,month)+1 || Date.today == first_day(year,month)+2 || Date.today == first_day(year,month)+3 || Date.today == first_day(year,month)+4 %>
+        <h1>8. if OR - hi today is 1,2,3</h1>
+    <% end %>
+<% elsif Date.today == first_day(year,month) && Date.today.strftime("%A") != 'Saturday' || Date.today.strftime("%A") != 'Sunday' %>
+    <% if Date.today == first_day(year,month) || Date.today == first_day(year,month)+1 || Date.today == first_day(year,month)+2 %>
+        <h1>9. if OR - hi today is 1,2,3</h1>
+    <% end %>
+<% else %>
+    <h1>10. wowslider</h1>
+<% end %>
+
+</p>
+<% if Date.today == n_day(year,month) && Date.today.strftime("%A") == 'Saturday' || Date.today.strftime("%A") == 'Sunday'%>
+    <% if Date.today == n_day(year,month) || Date.today == n_day(year,month)+1 || Date.today == n_day(year,month)+2 || Date.today == n_day(year,month)+3 || Date.today == n_day(year,month)+4 %>
+        <h1>8. if OR - hi today is 1,2,3</h1>
+    <% end %>
+<% elsif Date.today == n_day(year,month) && Date.today.strftime("%A") != 'Saturday' || Date.today.strftime("%A") != 'Sunday' %>
+    <% if Date.today == n_day(year,month) || Date.today == n_day(year,month)+1 || Date.today == n_day(year,month)+2 %>
+        <h1>9. if OR - hi today is 1,2,3</h1>
+    <% end %>
+<% else %>
+    <h1>10. wowslider</h1>
+<% end %>
+
+<% if is_alert1_day(Date.today)  %>
+    <h1>hi</h1>
+<% else %>
+    <h1>box2</h1>
+<% end %>

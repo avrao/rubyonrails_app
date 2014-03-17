@@ -1,0 +1,92 @@
+<!--header-->
+<div class="navbar navbar-fluid-top" style="
+position: relative;
+        z-index: 1000;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        min-height: 15px;margin-bottom: 0px;">
+  <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </a>
+  <!--<div class="navbar-inner">-->
+  <!-- <div style="margin-left: 10px;">-->
+  <div class="span4" style="
+  position: relative;display: inline-block;float: left;margin: 0px;">
+    <%= link_to image_tag("main_logo.jpeg", :border => 0 ), "/", :title => "InfraOps logo" %>
+  </div>
+
+  <!--<a class="brand" href="#">InfraOps</a>-->
+  <div class="span2 container-fluid" style="float:right; "><!--style="float:right;"-->
+
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!--Indicators-->
+          <ol class="carousel-indicators">
+            <li class="" data-slide-to="0" data-target="#carousel-example-generic"></li>
+            <li class="" data-slide-to="1" data-target="#carousel-example-generic"></li>
+            <li class="" data-slide-to="2" data-target="#carousel-example-generic"></li>
+            <li class="" data-slide-to="3" data-target="#carousel-example-generic"></li>
+            <li class="active" data-slide-to="4" data-target="#carousel-example-generic"></li>
+          </ol>
+      <!--Wrapper for slides-->
+          <div class="carousel-inner">
+            <div class="item">
+              <%= image_tag "Brazil.jpeg"  %>
+                  <div class="carousel-caption">
+                    <span class="txt1"><%= brtTimeZone() %></span><br>
+                    <span class="txt2"><%= brtDateTime() %></span>
+                  </div>
+            </div>
+            <div class="item">
+             <%= image_tag "Virginia.jpeg" %>
+                 <div class="carousel-caption">
+                    <span class="txt1"><%= estTimeZone() %></span><br />
+                    <span class="txt2"><%= estDateTime() %></span>
+                 </div>
+            </div>
+            <div class="item">
+             <%= image_tag "Oregon.jpeg"  %>
+                 <div class="carousel-caption">
+                    <span class="txt1"><%= pstTimeZone() %></span><br />
+                    <span class="txt2"><%= pstDateTime() %></span>
+                 </div>
+            </div>
+            <div class="item">
+              <%= image_tag "Washington.jpeg"  %>
+                  <div class="carousel-caption">
+                    <span class="txt1"><%= pstTimeZone() %></span><br />
+                    <span class="txt2"><%= pstDateTime() %></span>
+                  </div>
+            </div>
+            <div class="item active">
+              <%= image_tag "California.jpeg" %>
+                <div class="carousel-caption">
+                    <span class="txt1"><%= pstTimeZone() %></span><br />
+                    <span class="txt2"><%= pstDateTime() %></span>
+                </div>
+            </div>
+          </div>
+      <!--Controls-->
+      <!--   <a class="left carousel-control" data-slide="prev" href="#carousel-example-generic">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" data-slide="next" href="#carousel-example-generic">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div>-->
+        <div class="span5"></div>
+        <form class="navbar-form form-search">
+          <div class="input-append">
+            <input type="text" style="width:80%;border:2px solid rgb(69,64,64);" class="search-query" name="search_site" value="" onblur="if(this.value=='') this.value=''" onfocus="if(this.value =='' ) this.value=''">
+            <a onclick="document.getElementById('search').submit()" href="/">
+                <%= image_tag "icon_search.jpeg" %>
+            </a>
+          </div>
+        </form>
+
+      </div><!--/.nav-collapse -->
+  <!-- </div>-->
+  <!-- </div>-->
+  </div>
+</div>

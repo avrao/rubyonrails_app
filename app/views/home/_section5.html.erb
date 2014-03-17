@@ -1,0 +1,66 @@
+<!--2 columns accordion & video -->
+<section>
+  <div class="container">
+    <div class="row">
+      <article class="col-lg-4 col-md-4 col-sm-4">
+        <h3>Technical Tips</h3>
+        <ul class="_accodList">
+          <li>
+            <span class="_plus"></span>
+            <h6>Lorem ipsum dolor sit amet, consec tetuer</h6>
+                <p><span>Vestibu lum molestie lacuiirhs.</span> Aenean non ummy hen dreriauris. Ohasellllus porta. Fusce suscipitvarius mium sociis totdnatibus et magis dis parturient. montes.</p>
+          </li>
+          <li>
+            <span class="_plus"></span>
+            <h6>Lorem ipsum dolor sit amet, consec tetuer</h6>
+                <p><span>Vestibu lum molestie lacuiirhs.</span> Aenean non ummy hen dreriauris. Ohasellllus porta. Fusce suscipitvarius mium sociis totdnatibus et magis dis parturient. montes.</p>
+          </li>
+        </ul>
+        <a href="#" class="btn-default btn1">more tips</a>
+      </article>
+
+<!--      <article class="col-lg-8 col-md-8 col-sm-8" style="padding-left: 75px;">
+        <div class="tail">
+
+          <div class="righttail"></div>
+          <div class="top-tail">
+            <div class="border-bot"></div>
+            <div class="player">
+              <div id="flash1">
+                <embed id="flash1" width="100%" height="392" flashvars="colorTheme=white" wmode="transparent" allowfullscreen="true" quality="high" name="flash1" src=""<%= asset_path('test.flv') %>" type="application/x-shockwave-flash"></embed>
+              </div>
+              <script type="text/javascript">
+                  var fo = new FlashObject(""<%= asset_path('test.flv') %>, "flash1", "100%", "392", "8", "");
+                  fo.addParam("quality", "high");
+                  fo.addParam("allowFullScreen", "true");
+                  fo.addParam("wmode", "transparent");
+                  fo.addParam("flashvars", "colorTheme=white");
+                  fo.write("flash1");
+              </script>
+              <div class="bottom-player"></div>
+            </div>
+          </div>
+
+        </div>
+
+      </article>-->
+
+<!--<video id="my_video_1" class="video-js vjs-default-skin" controls
+             preload="auto" width="320" height="240" poster="assets/amz_broadcast.png"
+             data-setup="{}">
+        <source src="assets/small.mp4" type='video/mp4'>
+        <source src="assets/small.WebM" type='video/WebM'>
+        Your brwoser doesn't seems to support video tag
+</video>-->
+      <video controls="controls">
+        <source src=assets/small.webm type=video/webm>
+        <source src=assets/small.ogv type=video/ogg>
+        <source src=assets/small.mp4 type=video/mp4>
+        <source src=assets/small.3gp type=video/3gp>
+      </video>
+<%= video_tag ['assets/small.ogv','assets/small.mp4','assets/small.webm'], :size => "320x240", :controls => 'auto' %>
+      <%= video_tag ['assets/bezos_7min.mp4'], :size => "320x240", :controls => 'auto' %>
+
+    </div>
+  </div>
+</section>

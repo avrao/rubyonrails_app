@@ -1,0 +1,102 @@
+<div style="width:100%;height:2px;margin-bottom:5px;background: #DD4F05"></div>
+<div class="span3">
+    <ul class="sf-menu-phone item">
+      <li class="level10 nav-1 level-top">
+        <a class="level-top" href="/blog">
+            <span>DCEO</span>
+        </a>
+      </li>
+      <li class="level10 nav-2 level-top">
+        <a class="level-top" href="/newsletter">
+            <span>DCO</span>
+        </a>
+      </li>
+    </ul>
+    <ul class="sf-menu-phone item">
+      <li class="level10 nav-3 level-top">
+        <a class="level-top" href="/blog">
+                <span>DCGS</span>
+        </a>
+      </li>
+      <li class="level10 nav-4 level-top">
+        <a class="level-top" href="/newsletter">
+                <span>Blog</span>
+        </a>
+      </li>
+    </ul>
+    <ul class="sf-menu-phone item">
+      <li class="level10 nav-5 level-top">
+        <a class="level-top" href="/blog">
+                <span>Newsletter</span>
+        </a>
+      </li>
+      <li class="level10 nav-6 level-top">
+        <a class="level-top" href="/newsletter">
+                <span>Forums</span>
+        </a>
+      </li>
+    </ul>
+</div>
+<div class="span7" style="margin-left: 30px">
+  <% if is_alert_day(Date.today)  %>
+      <%= render 'home/hpNewsletter' %>
+  <% else %>
+      <%= render 'home/topslider' %>
+   <% end %>
+</div>
+<div class="span2" style="margin-left: 30px">
+        <!--<div>
+            <ul class="videos wrapper">
+              <li><a class="a-1" href="https://broadcast.amazon.com/videos/15245-Live-Unicode-or-Die-Hard-Migrating-to-Unicode-in-your-corner-of-Amazon?width=550&amp;height=400&amp;colorTheme=white&amp;fileVideo=intro06.flv" rel="prettyPhoto" title="Video on unicode"><span>blah blah</span></a></li>
+              <li><a class="a-2" href="https://broadcast.amazon.com/videos/15446-Web-Analytics-Impression-Tracking-2-0?width=550&amp;height=400&amp;colorTheme=white&amp;fileVideo=SL_100.flv" rel="prettyPhoto" title="Video on Web Analytics"><span>blah blah</span></a></li>
+              <li class="last"><a class="a-3" href="https://broadcast.amazon.com/videos/12489-Employee-Q-A-All-Hands-Q3-2013?width=550&amp;height=400&amp;fileVideo=test.flv" rel="prettyPhoto" title="Video - All hands"><span>blah blah</span></a></li>
+            </ul>
+          &lt;!&ndash;<div style="padding:50px 0px 0px 50px;float: left;"><h3>New <br/> Releases</h3></div>&ndash;&gt;
+
+        </div>-->
+            <div class="thumb-pad1">
+              <!--<div class="box_inner">-->
+                <div class="thumbnail">
+                   <%= link_to "Innovate.", "/blog" ,class:"title1" %><!--<br>
+                   <span class="icon-suitcase"></span>-->
+                    <!-- <p> Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit.                 </p>-->
+                </div>
+              <!--</div>-->
+            </div>
+            <div class="thumb-pad1">
+             <!-- <div class="box_inner">-->
+                <div class="thumbnail">
+                  <p class="title1">Incubate.</p>
+                  <!--<span class="icon-cogs"></span>-->
+                <!--  <p>Aenean nonummy henerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis.</p>-->
+                </div>
+            </div>
+           <!-- </div>-->
+            <div class="thumb-pad1">
+              <!--<div class="box_inner">-->
+                <div class="thumbnail">
+                  <p class="title1">Integrate.</p>
+                  <!--<span class="icon-file-alt"></span>-->
+                <!--  <p>Aenean nonummy henerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque.</p>-->
+                </div>
+            </div>
+            <!--</div>-->
+            <div class="thumb-pad1">
+              <!--<div class="box_inner">-->
+                <div class="thumbnail">
+                  <p class="title1">Automated. </p>
+                  <!--<span class="icon-bar-chart"></span>-->
+                <!--   <p>Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient.</p>-->
+                </div>
+            </div>
+            <!--</div>-->
+</div>
+</div>
+
+
+
+
+
+
+
+

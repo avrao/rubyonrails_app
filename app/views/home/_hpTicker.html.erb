@@ -1,0 +1,6 @@
+<div>
+  <% @hpTicker.each do |hpTicker| %>
+      <h3>Date: <%= hpTicker.created_at.strftime('%D') %></h3>
+      <p><%= hpTicker.content %></p>
+  <% end %>
+</div>
